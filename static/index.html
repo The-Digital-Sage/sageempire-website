@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage Empire - Connect With The Sage</title>
+    <meta name="description" content="Join the mystical community of seekers, mystics, sages, and oracles. Discover wisdom, connect with like-minded souls, and embark on your spiritual journey.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="/assets/logos/sageempire_main_logo.png" alt="Sage Empire" class="nav-logo">
+                <span class="nav-title">SAGE EMPIRE</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#wisdom" class="nav-link">Wisdom</a>
+                <a href="#stream" class="nav-link">Stream</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+                <button class="btn btn-secondary" id="login-btn">Login</button>
+                <button class="btn btn-primary" id="register-btn">Join Empire</button>
+                <div class="user-menu hidden" id="user-menu">
+                    <img src="/assets/icons/default-avatar.png" alt="Profile" class="user-avatar" id="user-avatar">
+                    <div class="user-dropdown" id="user-dropdown">
+                        <a href="#profile" class="dropdown-item">Profile</a>
+                        <a href="#dashboard" class="dropdown-item">Dashboard</a>
+                        <a href="#orders" class="dropdown-item">Orders</a>
+                        <a href="#settings" class="dropdown-item">Settings</a>
+                        <hr class="dropdown-divider">
+                        <a href="#logout" class="dropdown-item" id="logout-btn">Logout</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <img src="/assets/backgrounds/hero_background.png" alt="Mystical Mountains" class="hero-bg-image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">CONNECT WITH</span>
+                        <span class="title-line title-emphasis">THE SAGE</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Join a mystical empire of seekers, mystics, and oracles. 
+                        Discover ancient wisdom, modern insights, and connect with a community 
+                        that transcends the ordinary.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" id="hero-join-btn">
+                            <i class="fas fa-star"></i>
+                            Begin Your Journey
+                        </button>
+                        <button class="btn btn-secondary btn-large" id="hero-explore-btn">
+                            <i class="fas fa-compass"></i>
+                            Explore Empire
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Seekers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Mystics</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Sages</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Subscription Tiers -->
+        <section id="tiers" class="tiers-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose Your Path</h2>
+                    <p class="section-subtitle">
+                        Each tier unlocks deeper wisdom and exclusive community access
+                    </p>
+                </div>
+                
+                <div class="tiers-grid">
+                    <div class="tier-card" data-tier="seeker">
+                        <div class="tier-icon">
+                            <img src="/assets/icons/subscription_seeker.png" alt="Seeker">
+                        </div>
+                        <h3 class="tier-name">Seeker</h3>
+                        <div class="tier-price">
+                            <span class="price-amount">$9.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> Community Access</li>
+                            <li><i class="fas fa-check"></i> Basic Content</li>
+                            <li><i class="fas fa-check"></i> Monthly Wisdom</li>
+                            <li><i class="fas fa-check"></i> Discord Access</li>
+                        </ul>
+                        <button class="btn btn-tier" data-tier="seeker">Choose Seeker</button>
+                    </div>
+                    
+                    <div class="tier-card tier-popular" data-tier="mystic">
+                        <div class="tier-badge">Most Popular</div>
+                        <div class="tier-icon">
+                            <img src="/assets/icons/subscription_mystic.png" alt="Mystic">
+                        </div>
+                        <h3 class="tier-name">Mystic</h3>
+                        <div class="tier-price">
+                            <span class="price-amount">$19.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> Everything in Seeker</li>
+                            <li><i class="fas fa-check"></i> Premium Content</li>
+                            <li><i class="fas fa-check"></i> Early Access</li>
+                            <li><i class="fas fa-check"></i> Exclusive Events</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                        </ul>
+                        <button class="btn btn-tier btn-primary" data-tier="mystic">Choose Mystic</button>
+                    </div>
+                    
+                    <div class="tier-card" data-tier="sage">
+                        <div class="tier-icon">
+                            <img src="/assets/icons/subscription_sage.png" alt="Sage">
+                        </div>
+                        <h3 class="tier-name">Sage</h3>
+                        <div class="tier-price">
+                            <span class="price-amount">$39.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> Everything in Mystic</li>
+                            <li><i class="fas fa-check"></i> 1-on-1 Sessions</li>
+                            <li><i class="fas fa-check"></i> Exclusive Merchandise</li>
+                            <li><i class="fas fa-check"></i> VIP Events</li>
+                            <li><i class="fas fa-check"></i> Custom Content</li>
+                        </ul>
+                        <button class="btn btn-tier" data-tier="sage">Choose Sage</button>
+                    </div>
+                    
+                    <div class="tier-card tier-premium" data-tier="oracle">
+                        <div class="tier-icon">
+                            <img src="/assets/icons/subscription_oracle.png" alt="Oracle">
+                        </div>
+                        <h3 class="tier-name">Oracle</h3>
+                        <div class="tier-price">
+                            <span class="price-amount">$99.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> Everything in Sage</li>
+                            <li><i class="fas fa-check"></i> Personal Guidance</li>
+                            <li><i class="fas fa-check"></i> Direct Access</li>
+                            <li><i class="fas fa-check"></i> Exclusive Retreats</li>
+                            <li><i class="fas fa-check"></i> Master Classes</li>
+                        </ul>
+                        <button class="btn btn-tier btn-premium" data-tier="oracle">Choose Oracle</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Feed -->
+        <section id="community" class="community-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Community Wisdom</h2>
+                    <p class="section-subtitle">
+                        Share insights, connect with fellow seekers, and grow together
+                    </p>
+                </div>
+                
+                <div class="community-content">
+                    <div class="community-sidebar">
+                        <div class="create-post-card">
+                            <h3>Share Your Wisdom</h3>
+                            <textarea placeholder="What insights would you like to share?" id="post-content"></textarea>
+                            <div class="post-actions">
+                                <button class="btn btn-icon"><i class="fas fa-image"></i></button>
+                                <button class="btn btn-icon"><i class="fas fa-video"></i></button>
+                                <button class="btn btn-primary" id="create-post-btn">Share</button>
+                            </div>
+                        </div>
+                        
+                        <div class="community-stats">
+                            <h4>Empire Stats</h4>
+                            <div class="stat-row">
+                                <span>Active Members</span>
+                                <span class="stat-value">2,847</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Posts Today</span>
+                                <span class="stat-value">156</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Wisdom Shared</span>
+                                <span class="stat-value">45.2K</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="community-feed">
+                        <div class="feed-filters">
+                            <button class="filter-btn active" data-filter="all">All Posts</button>
+                            <button class="filter-btn" data-filter="trending">Trending</button>
+                            <button class="filter-btn" data-filter="following">Following</button>
+                            <button class="filter-btn" data-filter="premium">Premium</button>
+                        </div>
+                        
+                        <div class="posts-container" id="posts-container">
+                            <!-- Posts will be loaded dynamically -->
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span>Loading wisdom...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="shop-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mystical Marketplace</h2>
+                    <p class="section-subtitle">
+                        Discover sacred items, digital wisdom, and exclusive merchandise
+                    </p>
+                </div>
+                
+                <div class="shop-filters">
+                    <button class="filter-btn active" data-category="all">All Items</button>
+                    <button class="filter-btn" data-category="Apparel">Apparel</button>
+                    <button class="filter-btn" data-category="Digital">Digital</button>
+                    <button class="filter-btn" data-category="Crystals">Crystals</button>
+                    <button class="filter-btn" data-category="Courses">Courses</button>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded dynamically -->
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <span>Loading treasures...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="auth-modal-title">Join the Empire</h3>
+                <button class="modal-close" id="auth-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="auth-form">
+                    <div class="form-group">
+                        <label for="auth-username">Username</label>
+                        <input type="text" id="auth-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="auth-email">Email</label>
+                        <input type="email" id="auth-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="auth-password">Password</label>
+                        <input type="password" id="auth-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="auth-submit">
+                        Join Empire
+                    </button>
+                </form>
+                <div class="auth-switch">
+                    <span id="auth-switch-text">Already a member?</span>
+                    <button class="btn btn-link" id="auth-switch-btn">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Your Cart</h3>
+                <button class="modal-close" id="cart-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <span class="total-amount" id="cart-total">$0.00</span>
+                    </div>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-secondary" id="continue-shopping">Continue Shopping</button>
+                    <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/shop.js"></script>
+    <script src="/js/community.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
